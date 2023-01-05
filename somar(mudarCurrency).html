@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        background-color: rgb(12, 1, 112);
+    }
+    .box{
+        margin-top: 100px;
+        justify-content: center;
+        display: flex;
+    }
+    h1{
+        font-size: 50px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-transform: uppercase;
+        color: orange;
+        padding: 90px;
+        display: inline-block
+    }
+</style>
+<body>
+    <div class="box">
+        <h1 id="ola"> Olá Mundo</h1>
+    </div>
+
+
+
+    <script>
+        n1 = Number(prompt('Digite um Numero'))
+        n2 = Number(prompt('Digite outro Númeo'))
+        soma = n1 + n2
+        alert("A soma desses Números é " + soma)      
+        //converte auto para a currency do país
+        //sem ter de fazer replace, to fixed....
+        soma2 = soma.toLocaleString('pt-br', {style: 'currency', currency:'BRL'})
+        alert(`este valor em real é ${soma2}`)
+        
+    </script>
+</body>
+
+
+</html>

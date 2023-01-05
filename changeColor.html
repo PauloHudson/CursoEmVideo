@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        background-color: gray;
+    }
+    .box{
+        justify-content: center;
+        display: flex;
+    }
+    h1{
+        margin-top: 100px;
+        padding: 90px;
+        background-color: white;
+        display: inline-block
+    }
+</style>
+<body>
+    <div class="box">
+        <h1 id="ola"> Olá Mundo</h1>
+    </div>
+
+
+
+    <script>
+        let nome = window.prompt('qual é seu nome')
+        window.alert('é uma grande prazer te conhece' +" "+ nome)
+        const cor = document.querySelector('#ola')
+        
+        cor.addEventListener("mouseover", function(){
+            this.style.backgroundColor = "red";
+        })
+        cor.addEventListener("mouseout", function(){
+            this.style.backgroundColor="white";
+        })
+    </script>
+</body>
+
+
+</html>

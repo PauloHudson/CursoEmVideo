@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(12, 1, 112);
+    }
+</style>
+
+<body>
+    
+    <h1> XXXXX</h1><br>
+    <p> Aqui vai ser o resultado</p><br>
+    <p id="segundo"> aprendendo a suar o DOM</p><br>
+    <p name="segundo"> aprendendo a suar o DOM</p><br>
+    <p class="segundo"> aprendendo a suar o DOM</p><br>
+    <div> Clique em MIM </div>
+
+    <script>
+        //DOM DOCUMENT OBJECT MODEL...
+
+        //by tagname = mais de um elemento..
+        let p1 = document.getElementsByTagName('p')[0]
+
+        //let corpo = document.body
+        //corpo.style.background = "yellow"
+
+        //pega todo o html... InnerText apenas o <p> sem os children...
+        //document.write(p1.innerHTML)
+
+        //getElementById não precisa uar #... para referenciar 
+        let p2 = document.getElementById('segundo')
+        p2.style.color = 'yellow'
+        p2.innerHTML = "Hello, i've been changed"
+
+        //getElementByName, tem de referenciar a posição, já que por padrão
+        //é usado no plural...
+        let p3 = document.getElementsByName('segundo')[0]
+        p3.style.color = "orange"
+
+        //getElementByClassName, tem de referenciar a posição, já que por padrão
+        //é usado no plural.
+        let p4 = document.getElementsByClassName('segundo')[0]
+        p4.style.color = 'green'
+
+
+        //seletor aqui estamos referenciando pelo css....
+        //daí temos de usar os # para id, . para class ....
+        let p5 = document.querySelector('#segundo')
+        p5.style.color = 'red'
+
+
+    </script>
+</body>
+
+
+</html>
