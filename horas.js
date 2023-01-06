@@ -1,6 +1,7 @@
 //dar bom dia boa tarde boa noite
 let agora = new Date()
 let horas = agora.getHours()
+
 function horasX(){
     if(horas < 12){
         console.log('Bom Dia')
