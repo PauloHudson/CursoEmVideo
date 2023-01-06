@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> SOMAR NUMEROS</h1>
+    <input type="number" class="txtn1">+
+    <input type="number" class="txtn2">
+    <input type="button" value="somar" onclick="somar()">
+    <div class="resultado"> Resultado = </div>
+
+    <script>
+        function somar(){
+            let n1 = document.querySelector('.txtn1')
+            let n2 =  document.querySelector('.txtn2')
+            let res = document.querySelector('div')
+            n11 = Number(n1.value)
+            n22 = Number(n2.value)
+            res.innerText = `A Multiplicação entre ${n11} e ${n22} é = ${n11*n22}`
+            
+        }
+    </script>
+
+    <style>
+        div#res{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="input"> Digite A velocidade
+        <input type="number" class="number" value="digiteAqui">
+        <input type="button" class="enviar" value="enviar" onclick="verificador()"></button><br>
+        <div class="resultado"> </div><br>
+    </div>
+    <style>
+        *{
+            background-color: rgb(207, 207, 207);
+        }
+    </style>
+    <script>
+        function verificador(){
+            var velocidade = document.querySelector('.number')
+            var res = document.querySelector('.resultado')
+            let number = Number(velocidade.value)
+            if(number > 60){
+                res.innerHTML = `Sua velocidade é de ${number}KM/H Acima da Velocidade Permitida (60 KM/H) Você foi Multado...`
+            }else{
+                res.innerHTML =  `Sua velocidade é de ${number}KM/H Abaixo da velocidade Permitida (60 KM/H), Prossiga com Cuidado... `
+            }}
+        
+        
+    </script>
+</body>
+</html>

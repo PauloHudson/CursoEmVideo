@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        background-color: blue;
+    }
+    .area{
+        font-family: Arial, Helvetica, sans-serif;
+        width: 200px;
+        height: 200px;
+        color: white;
+        background: green;
+        line-height: 200px;
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="area" >
+        interaja...
+    </div>
+    <script>
+        // onmouseover="clicar()" onmouseout="ClickOut()"
+        //invés de fazer só com o html podemos fazer com o eventlistener
+        //dentro do próprio js
+        let quadrado = document.querySelector(".area")
+        quadrado.addEventListener('mouseover', function(){
+            //apontou para o this. uma vez, que quadrado está fora do escoppo
+            //daí precisamos apontar para o global...
+            this.style.background = 'red'
+        })
+        quadrado.addEventListener('mouseout', function(){
+            this.style.background = 'green'
+        })
+        /* conjunto de códigos, que vão ocorrer quando o evento acontecer....*/
+    </script>
+</body>
+</html>
