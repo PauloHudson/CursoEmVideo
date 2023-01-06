@@ -1,0 +1,31 @@
+*{
+    font-family: arial;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(17, 178, 236);
+}
+
+h1{
+   color: white; 
+    text-align: center;
+    padding: 20px;
+}
+
+section{
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.363);
+    padding: 20px 20px;
+    width: 600px;
+    text-align: left;
+    margin: auto;
+    background-color: white;
+}
+.imagens{
+    display: none;
+}
+h4{
+    text-align: center;
+}
