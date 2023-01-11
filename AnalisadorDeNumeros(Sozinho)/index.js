@@ -11,7 +11,7 @@ function AddSelect(){
     }else{
         array.push(valor)
         let elementos = document.createElement('option')
-        elementos.text = `Adicionado número ${valor}`
+        elementos.text = `Adicionado O número ${valor}`
         selector.appendChild(elementos)
     }
     
@@ -34,6 +34,6 @@ function Finalizar(){
     resposta.innerHTML += `Ao todo temos ${array.length} Numeros Cadastrados <br> <br>`
     resposta.innerHTML += `Somando Todos Os valores temos ${contador} <br> <br>`
     resposta.innerHTML += `A média dos Valores é ${media.toFixed(2)} <br> <br>`
-    resposta.innerHTML += `O Maior Valor é  ${max} <br> <br>`
+    resposta.innerHTML += `O maior Valor é  ${max} <br> <br>`
     resposta.innerHTML += `O Menor Valor é  ${min} <br> <br>`
 }
