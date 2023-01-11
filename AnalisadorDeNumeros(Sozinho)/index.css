@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgba(3, 46, 126, 0.603);
+}
+h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+section{
+    box-shadow: 3px 3px 10px rgba(255, 13, 13, 0);
+    border-radius: 15px;
+    height: auto;
+    margin: auto;
+    width: 500px;
+    padding: 15px;
+    background-color: white;
+}
+
+h2{
+    text-align: center;
+}
+h5{
+    font-size: 20px;
+    font-style: italic;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+.inputs{
+    text-align: center;
+}
+.botao{
+    box-shadow: 2px 2px 14px rgba(0,0,0,0.363);
+    color: white;
+    font-weight: bold;
+    background-color: orange;
+    border:none ;
+    padding: 5px;
+    border-radius: 10px;
+}
+#selecionar{
+    width: 163px;
+}
+.botao:hover{
+    padding: 6px;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: rgb(138, 90, 0);
+}
+#botao2{
+    margin: 5px 0px;
+}
+.selector{
+    margin: 10px;
+    text-align: center;
+}
