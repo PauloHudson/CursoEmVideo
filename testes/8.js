@@ -3,4 +3,4 @@ function primeira(valor){
     
 }
 primeira(2)
-console.log(setTimeout(primeira, 2000))
+
