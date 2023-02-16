@@ -24,4 +24,6 @@ numero = 20
 print("[%01d]" % numero)
 
 dinheiro = 52.34
-print('%s tem %d de idade e [R$%5.1f]' % (nome, idade, dinheiro))
+# pulando as casas em relação ao tamano que coloquei....
+print('%s tem %d anos de idade e R$%5.1f' % (nome, idade, dinheiro))
+print(f'{nome} tem {idade} anos de idade e em sua carteira R${dinheiro:6.2f}')
